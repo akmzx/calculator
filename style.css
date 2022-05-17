@@ -1,0 +1,49 @@
+html {
+  font-family: "Fredoka", sans-serif;
+}
+
+.header {
+  text-align: center;
+  padding: 0px;
+  margin: 0 auto;
+}
+
+.line {
+  margin: 0 auto 50px;
+  width: 400px;
+  border: 1px solid black;
+}
+
+.calculator-grid {
+  display: grid;
+  grid-template-columns: 100px 100px 100px 100px;
+  height: 300px;
+  width: 400px;
+  margin: auto;
+  box-shadow: 0px 5px 15px;
+  border-radius: 5px;
+}
+
+.output {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  flex-direction: column;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.output .previous-operand {
+  color: rgba(0, 0, 0, 0.75);
+  font-size: 20px;
+}
+
+.output .current-operand {
+  color: black;
+  font-size: 25px;
+}
+
+.span-two {
+  grid-column: span 2;
+}
